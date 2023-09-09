@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import {FaTimes} from "react-icons/fa";
 import {CiMenuFries} from "react-icons/ci";
-
+import CartWidget from "./cartWidget";
 
 const NavBar = () => {
     const [click, setClick] = useState(false);
@@ -20,6 +20,7 @@ const NavBar = () => {
                 <Link spy={true} smooth={true} to="Contacto">
                     <li className="my-4 py-4 border-b border-bg-emerald-700 hover:bg-bg-emerald-700 hover:rounded">Contacto</li>
                 </Link>
+                <CartWidget/>
             </ul>
         </div>
     </>
@@ -41,6 +42,7 @@ const NavBar = () => {
                 <Link spy={true} smooth={true} to="Contacto">
                     <li className="hover:text-teal-950 transition border-b-2 border-withe hover:border-teal-950 cursor-pointer">Contacto</li>
                 </Link>
+                <CartWidget/>
             </ul>
                     </div>
                 </div>
