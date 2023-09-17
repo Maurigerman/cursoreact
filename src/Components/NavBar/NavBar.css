@@ -1,0 +1,87 @@
+@font-face {
+    font-family: MyHelvetica;
+    src: local("Helvetica Neue Bold"),
+    local("HelveticaNeue-Bold"),
+    url(MgOpenModernaBold.ttf);
+    font-weight: bold;
+  }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #0079C7; /* Color de fondo */
+  padding: 10px; /* Espaciado interior */
+  border-radius: 10px;
+}
+
+.nav-link {
+  margin-left: 15px; /* Espaciado entre enlaces */
+  text-decoration: none;
+  color: black; /* Color del texto */
+  font-size: 18px; /* Tamaño de la fuente */
+}
+
+.nav-link:hover {
+  color: white; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para el logo de la empresa */
+.empresa {
+  flex: 1; /* Ocupa el espacio restante en la barra */
+}
+
+.empresa h1 {
+  margin-left: 10px;
+  font-size: 24px;
+  color: black; /* Color del texto */
+}
+
+/* Estilos para el widget de carrito */
+.cartwidget {
+  margin-left: 15px; /* Espaciado entre el carrito y los enlaces */
+}
+
+/* Estilos para el saludo */
+.greeting {
+    flex: 1; /* Ocupa el espacio restante en la barra */
+    display: flex;
+    padding-left: 10%;
+    align-items: center;
+    color: black;
+  }
+  
+  .greeting h2 {
+    margin: 0;
+    font-size: 18px;
+    color: black; /* Color del texto */
+  }
+
+  @media (max-width: 700px) {
+    header {
+      flex-direction: column; /* Cambia la dirección del flexbox a columna */
+      align-items: center; /* Alinea los elementos a la izquierda */
+    }
+  
+    .nav-bar {
+      flex-direction: column; /* Cambia la dirección de la barra de navegación a columna */
+      align-items: center; /* Alinea los elementos verticalmente en la barra de navegación */
+    }
+  
+    .nav-link {
+        color: black; /* Color del texto */
+        font-size: 18px; /* Tamaño de la fuente */
+      }
+    .greeting {
+        flex: 1; /* Ocupa el espacio restante en la barra */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0%;
+      }
+  
+    .cartwidget {
+    margin-top: 10px; /* Agrega un margen superior para separar el widget de carrito */
+    margin-left: -10px;
+    }
+  }
